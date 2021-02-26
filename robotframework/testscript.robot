@@ -1,10 +1,10 @@
 *** Settings ***
-Library    Selenium2Library
+Library    SeleniumLibrary
 
 *** Variables ***
 ${browser}    gc
-${url}    https://www.google.co.th/
-${delay}    0.2
+${url}    https://www.youtube.com/
+${delay}    0.3
 
 
 *** Keywords ***
@@ -16,13 +16,11 @@ Delay
 
 Location should be success
     Location should be    ${url}
-    title should be    Google
+    title should be    youtube
 
 *** Test cases ***
-Testcase -1- Open Google
+Testcase -1- Open youtube
     Open Page
     Delay
     Location should be success
     [Teardown]    close browser
-
-
