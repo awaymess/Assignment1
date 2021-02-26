@@ -16,10 +16,10 @@ Delay
 
 Location should be success
     Location should be    ${url}
-    title should be    youtube
+    title should be    YouTube
 
 *** Test cases ***
-Testcase -1- Open youtube
+Testcase -1- Open YouTube
     Open Page
     Delay
     Location should be success
