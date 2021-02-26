@@ -3,8 +3,8 @@ Library    Selenium2Library
 
 *** Variables ***
 ${browser}    gc
-${url}    https://www.youtube.com/
-${delay}    0.3
+${url}    https://www.google.co.th/
+${delay}    0.2
 
 
 *** Keywords ***
@@ -16,11 +16,13 @@ Delay
 
 Location should be success
     Location should be    ${url}
-    title should be    youtube
+    title should be    Google
 
 *** Test cases ***
-Testcase -1- Open youtube
+Testcase -1- Open Google
     Open Page
     Delay
     Location should be success
     [Teardown]    close browser
+
+
